@@ -1,0 +1,15 @@
+{
+  "name": "exercise3",
+  "version": "1.0.0",
+  "description": "Express App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vatsal Rathod",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
