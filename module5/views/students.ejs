@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Home</title>
+
+</head>
+
+<body>
+    <h2>Student</h2>
+    <% if(student && student.length) {%>
+        <ul>
+            <% student.forEach((item) => { %>
+              <li><%= item.name %></li>
+            <% }) %>
+          </ul>
+        <% } else {%>
+            <p>No student record</p>
+            <%}%>
+
+</body>
+
+</html>

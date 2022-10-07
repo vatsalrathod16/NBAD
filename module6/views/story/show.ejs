@@ -1,0 +1,15 @@
+<%-include('../partials/header.ejs')%>
+    <div class = "content">
+        <h4><%=story.title%></h4>
+        <small>Posted <%= story.createdAt%> by <%= story.author%></small>
+        <div id = "story"><%=story.content%></div>
+    </div>
+    <form>
+        <button type="sumbit" formmethod = "GET" formaction="/stories/<%=story.id%>/edit">
+            EDIT
+        </button>
+        <button type="sumbit" formmethod = "POST" formaction="/stories/<%=story.id%>?_method=DELETE">
+            DELETE
+        </button>
+    </form>
+<%-include('../partials/footer.ejs')%> 

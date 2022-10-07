@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/students', (req, res) => {
-    res.json(students);
+    res.render('students', {student: students});
 });
 
 app.post('/students', (req, res) => {
@@ -45,6 +45,8 @@ app.get('/students/:sid', (req, res) => {
     let student = students.find(element => element.id === id);
     res.render('student', {student: student});
 });
+
+
 
 app.get('/about', (req, res) => {
     res.send('About page');
